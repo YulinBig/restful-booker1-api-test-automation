@@ -4,7 +4,7 @@ Feature: Get Booking
   Background:
     * url BaseUrl
     * header Accept = 'application/json'
-
+  @BeonPath
        Scenario: Verificar petición correcta con una reserva id reciba cod 200
        Given path '/booking/' + 13
        When method GET

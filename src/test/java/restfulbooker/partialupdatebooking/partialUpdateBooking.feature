@@ -7,6 +7,7 @@ Feature: Partial Update BOOKING
     * header Context-Type = 'appliction/json'
     * header Accept = 'application/json'
 
+  @BeonPath
   Scenario:Verificar petición correcta para actualizar parcialmente una reserva reciba 200
     * def createTokenReponse = call read('classpath:common/createToken.feature')
     * def accessToken = createTokenReponse.response.token

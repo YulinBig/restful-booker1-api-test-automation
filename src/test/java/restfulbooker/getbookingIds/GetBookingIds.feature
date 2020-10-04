@@ -5,6 +5,8 @@ Feature: Get Booking Ids
   Background:
     * url BaseUrl
     * header Accept = 'application/json'
+
+  @BeonPath
     Scenario: Validar que al realizar una peticion obtenemos todos los booking Ids
       Given path '/booking'
       When method GET
